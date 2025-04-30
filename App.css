@@ -1,0 +1,189 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #f7f7f7;
+  color: #000;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #55ff5a, #000000);
+  border-radius: 0.75rem;
+  color: #fff;
+}
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.dashboard-header h2 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Log Card */
+.log-card {
+  grid-column: 1 / -1;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.log-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.log-table th,
+.log-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: center;
+}
+.log-table th {
+  background: #f0f0f0;
+}
+
+/* Guard Button Container */
+.guard-button-container {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Chart Toggle Container */
+.chart-toggle-container {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.chart-toggle-container .button.active {
+  border-bottom: 3px solid #000000;
+}
+
+/* Button Styles */
+.button {
+  background: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+.button:hover {
+  background: #eaeaea;
+  transform: scale(1.05);
+}
+
+/* Card Styles */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.card-content {
+  padding: 1.5rem;
+}
+
+/* Guard Card Specifics */
+.guard-card {
+  display: flex;
+  align-items: center;
+  border-left: 5px solid #000000;
+}
+.guard-card-content {
+  display: flex;
+  align-items: center;
+}
+.guard-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 2px solid #000000;
+}
+.guard-info {
+  display: flex;
+  flex-direction: column;
+}
+.guard-name {
+  font-size: 1.75rem;
+  margin: 0;
+  color: #000000;
+}
+.guard-details {
+  margin: 0.25rem 0;
+  color: #555;
+}
+
+/* Progress Bar Styles */
+.progress-container {
+  width: 100%;
+  height: 1rem;
+  background: #f0f0f0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+.progress-inner {
+  height: 100%;
+  width: 0%;
+  border-radius: 0.5rem;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Progress Card */
+.progress-card {
+  text-align: center;
+}
+.progress-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+/* Chart Card */
+.chart-card {
+  grid-column: span 2;
+}
+
+/* Export Container */
+.export-container {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
